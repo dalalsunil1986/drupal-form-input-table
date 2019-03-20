@@ -1,0 +1,7 @@
+tradesteps.form_input_table:
+  path: '/form_input_table'
+  defaults:
+    _form: 'Drupal\tradesteps\Form\FormInputTable'
+    _title: 'Form Input Table '
+  requirements:
+    _permission: 'access content'
