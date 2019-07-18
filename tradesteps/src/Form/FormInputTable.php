@@ -16,7 +16,7 @@ class FormInputTable extends FormBase {
         $form['contacts'] = array(
                                     '#type' => 'table',
                                     '#title' => 'Sample Table',
-                                    '#header' => array('Name', 'Phone'),
+                                    '#header' => array('Name', 'Phone', 'Checkboxes'),
                                 );
         
         // Add input fields in table cells.
@@ -34,6 +34,13 @@ class FormInputTable extends FormBase {
                                                 '#title_display' => 'invisible',
                                                 '#default_value' => '763-999-444'.$i,
                                             );
+                                            
+
+            $form['contacts'][$i]['checkboxes'] = array(
+                                                '#type' => 'checkboxes',
+                                                '#title' => t('Checkboxes'),
+                                                '#options' => [1 => 'One', 2 => 'Two'],
+                                            );                                            
         }
     
     
