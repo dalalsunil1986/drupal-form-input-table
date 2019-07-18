@@ -38,7 +38,6 @@ class FormInputTable extends FormBase {
 
             $form['contacts'][$i]['checkboxes'] = array(
                                                 '#type' => 'checkboxes',
-                                                '#title' => t('Checkboxes'),
                                                 '#options' => [1 => 'One', 2 => 'Two'],
                                             );                                            
         }
